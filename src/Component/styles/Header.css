@@ -1,0 +1,101 @@
+/* Base Styles (Large Screens) */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 150px;
+  background-color:white; /* Optional: dark background */
+  position: relative;
+  z-index: 10;
+}
+
+.Logo-img {
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+  padding: 8px 15px;
+  display: block;
+  font-size: 0.9em;
+  
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #d1113e;
+}
+
+/* Hamburger icon (hidden on large screens) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* ------------------------------
+   Responsive Styles (Small Screens)
+----------------------------------*/
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 10px 20px;
+    flex-direction: row;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav li {
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  nav li a {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .Logo-img {
+    width: 150px;
+  }
+}
