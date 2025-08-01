@@ -1,0 +1,103 @@
+/* ======= Footer Container ======= */
+.container {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  padding: 50px 80px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+}
+
+.container-sizing {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ======= Logo Section ======= */
+.image-container-sec {
+  margin-bottom: 20px;
+}
+
+.image-size {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* ======= Description Text ======= */
+.text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #d0d0d0;
+}
+
+/* ======= Contact Columns ======= */
+.contacts-items {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1;
+  min-width: 250px;
+}
+
+.item p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #c0c0ff;
+}
+
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item ul li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #dddddd;
+}
+
+/* ======= Footer Bottom Line ======= */
+.lst-sentence {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+/* ======= Responsive (Mobile / Small Screens) ======= */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .contacts-items {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .item {
+    min-width: 100%;
+  }
+
+  .text {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .image-size {
+    width: 50px;
+  }
+}

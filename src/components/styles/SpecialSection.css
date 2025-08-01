@@ -1,0 +1,98 @@
+/* ======= Section Container ======= */
+.special-section {
+  padding: 100px 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* ======= Title + Button ======= */
+.title-button {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 10px;
+}
+
+.title-button h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.title-button .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f4ce14;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.title-button .btn:hover {
+  background-color: #e2bb00;
+}
+
+/* ======= Menu Cards Layout ======= */
+.menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.Card-sizing {
+  flex: 1 1 30%;
+  max-width: 32%;
+  box-sizing: border-box;
+}
+
+/* ======= Tablet Screens ======= */
+@media screen and (max-width: 992px) {
+  .special-section {
+    padding: 80px 40px;
+  }
+
+  .Card-sizing {
+    flex: 1 1 45%;
+    max-width: 48%;
+  }
+
+  .title-button {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title-button h1 {
+    font-size: 1.8rem;
+  }
+
+  .title-button .btn {
+    margin-top: 10px;
+  }
+}
+
+/* ======= Mobile Screens ======= */
+@media screen and (max-width: 768px) {
+  .special-section {
+    padding: 60px 20px;
+  }
+
+  .Card-sizing {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .title-button h1 {
+    font-size: 1.5rem;
+  }
+
+  .title-button .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
